@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <countdown></countdown>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello';
+import Countdown from './components/Countdown';
 
 export default {
   name: 'app',
   components: {
-    Hello,
+    Countdown,
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+body {
+  font-family: 'Noto Serif', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  align-items: center;
+  background-image: url('./assets/japan-house.jpg');
+  background-size: cover;
+  background-position-y: 35%; 
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
